@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 });
 class Email {
     constructor() {
-        this.sendHtml({to: [{name: 'siwi', address: 'siwi@siwi.me'}], data:{title: '测试', content: 'xxx 执行成功'}})
+
     }
     async send() {
         nodemailer.createTestAccount((err, account) => {

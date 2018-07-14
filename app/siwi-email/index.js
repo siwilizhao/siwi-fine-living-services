@@ -1,8 +1,8 @@
-const redis = require('../../db/redis')
+const redis = require('../common/lib/redis')
 const wait = require('siwi-wait')
-const utils = require('../../utils')
-const emailModle = require('../models/email')
-const { SIWI_XIA_COMMON_EMAIL_LIST, NO_TASKING_WAIT_DURATION, EMAIL_SEND_FAIL_LIST } = require('../config')
+const utils = require('../utils')
+const emailModle = require('./models/email')
+const { SIWI_XIA_COMMON_EMAIL_LIST, NO_TASKING_WAIT_DURATION, EMAIL_SEND_FAIL_LIST } = require('./config')
 class Service {
     constructor() {
         this.init()
@@ -19,6 +19,7 @@ class Service {
                     await redis.lpop(EMAIL_SEND_FAIL_LIST, taskJson)
                 }
             }
+            console.log('wait')
             await utils.devLog('邮件发送队列为空')
             await wait(NO_TASKING_WAIT_DURATION)
         }
