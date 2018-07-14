@@ -1,0 +1,45 @@
+{
+  "name": "siwi-fine-living-services",
+  "version": "1.0.0",
+  "description": "services for siwi fine living",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siwilizhao/siwi-fine-living-services.git"
+  },
+  "keywords": [
+    "SIWI"
+  ],
+  "author": "SIWI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siwilizhao/siwi-fine-living-services/issues"
+  },
+  "homepage": "https://github.com/siwilizhao/siwi-fine-living-services#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.4.1",
+    "mongoose": "^5.2.3",
+    "mysql2": "^1.5.3",
+    "node-schedule": "^1.3.0",
+    "nodemailer": "^4.6.7",
+    "sequelize": "^4.38.0",
+    "shelljs": "^0.8.2",
+    "siwi-cache": "^1.0.7",
+    "siwi-hash": "^1.0.2",
+    "siwi-ioredis": "^1.0.0",
+    "siwi-logger": "^1.0.9",
+    "siwi-mixin": "^1.0.3",
+    "siwi-uniquestring": "^1.0.4",
+    "siwi-wait": "^1.0.0",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}

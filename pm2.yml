@@ -1,0 +1,22 @@
+apps:
+  - script : ./app/example/index.js
+    name   : siwi-example
+    watch  : true
+    env    :
+      NODE_ENV: env
+    env_production:
+      NODE_ENV: production
+  - script : ./app/siwi-email/index.js
+    name   : siwi-email
+    watch  : true
+    env    :
+      NODE_ENV: env
+    env_production:
+      NODE_ENV: production
+  - script : ./app/siwi-distribute/index.js
+    name   : siwi-distribute
+    watch  : true
+    env    :
+      NODE_ENV: env
+    env_production:
+      NODE_ENV: production
